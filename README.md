@@ -6,7 +6,7 @@ Vim modules available.
 ## Installation and Usage
 
 Clone this repo into `~/.textadept/modules` and add `relative = require('textadept-relative')` to your
-`~/.textadept/init.lua`. If you wish to deactivatet , you can bring up the command entry and type `relative.deactivate()`.
+`~/.textadept/init.lua`. If you wish to deactivate it, you can bring up the command entry and type `relative.deactivate()`.
 You can reactivate later with `relative.activate()`.
 
 ## Caveats
