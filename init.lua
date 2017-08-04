@@ -17,7 +17,9 @@ M.update_ui = function()
   buffer.margin_type_n[0] = buffer.MARGIN_RTEXT
   local curr_line = buffer:line_from_position(buffer.current_pos)
   for i=0,(buffer.line_count-1) do
-    buffer.margin_text[i] = tostring(math.abs(i - curr_line))
+    buffer.margin_text[i] = i == curr_line
+      and curr_line
+      or tostring(math.abs(i - curr_line))
   end
 end
 
